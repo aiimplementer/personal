@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>30-Day Weight Management Plan — Unified Table Styling</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg:#0f172a;
+      --card:#0b1220;
+      --muted:#94a3b8;
+      --accent:#34d399;
+      --accent-2:#60a5fa;
+      --glass: rgba(255,255,255,0.03);
+      --radius:14px;
+      font-family:'Inter', system-ui;
+    }
+
+    body {
+      margin:0;
+      background:linear-gradient(180deg,#071027,#081428);
+      color:#e6eef8;
+    }
+
+    .container {
+      max-width:980px;
+      margin:34px auto;
+      padding:28px;
+      background:rgba(255,255,255,0.02);
+      border-radius:16px;
+    }
+
+    header { display:flex; gap:18px; align-items:center; }
+    .logo { width:72px; height:72px; border-radius:12px; background:linear-gradient(135deg,var(--accent),var(--accent-2)); display:flex; align-items:center; justify-content:center; font-size:26px; font-weight:700; color:#04263b; }
+
+    h1 { margin:0; font-size:20px; }
+    p.lead { margin:6px 0 0; color:var(--muted); }
+
+    /* Unified Table Style */
+    .uni-table {
+      width:100%;
+      border-collapse:collapse;
+      font-family:'Inter', sans-serif;
+      font-size:14px;
+      color:#e6eef8;
+      background:rgba(255,255,255,0.02);
+      border:1px solid rgba(255,255,255,0.05);
+      border-radius:12px;
+      overflow:hidden;
+      margin-top:28px;
+    }
+
+    .uni-table thead tr {
+      background:linear-gradient(90deg, rgba(52,211,153,0.15), rgba(96,165,250,0.15));
+      color:#8bd5ff;
+      font-weight:600;
+    }
+
+    .uni-table th, .uni-table td {
+      padding:12px;
+      border-bottom:1px solid rgba(255,255,255,0.05);
+      vertical-align:top;
+    }
+
+    .uni-table tbody tr:nth-child(odd) { background:rgba(255,255,255,0.015); }
+    .uni-table tbody tr:nth-child(even) { background:rgba(255,255,255,0.025); }
+
+    .uni-table tfoot td {
+      background:rgba(255,255,255,0.03);
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    /* Cards */
+    .card { background:var(--card); padding:18px; border-radius:var(--radius); margin-top:28px; }
+    .section-title { display:flex; gap:10px; align-items:center; margin-bottom:8px; }
+    .section-title h3 { margin:0; font-size:16px; }
+
+    .small { color:var(--muted); font-size:13px; }
+    .list { padding-left:18px; }
+    /* Card shadows */
+  .card, .uni-table { box-shadow:0 4px 14px rgba(0,0,0,0.35); }
+
+  /* Icon labels */
+  .icon-label { display:inline-flex; align-items:center; gap:6px; font-weight:600; color:#8bd5ff; }
+
+  /* Mobile scroll for tables */
+  .table-wrap { overflow-x:auto; border-radius:12px; }
+
+  /* Compact table variation */
+  .compact-table th, .compact-table td { padding:8px !important; font-size:13px !important; }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">WL</div>
+    <div>
+      <h1>30-Day Weight Management Plan — Water • Walking • Fat-loss</h1>
+      <p class="lead">11th Dec 2025 - 12th Jan 2026</p>
+    </div>
+  </header>
+
+  <!-- START INFO SECTION -->
+  <div class="table-wrap" style="margin-top:20px;">
+    <table class="uni-table compact-table">
+      <thead>
+        <tr><th colspan="2">📅 Plan Details</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><b>Start Date</b></td><td>11th Dec 2025</td></tr>
+        <tr><td><b>Goal Date</b></td><td>12th Jan 2026</td></tr>
+        <tr><td><b>Start Weight</b></td><td>95.8 kg</td></tr>
+        <tr><td><b>Height</b></td><td>180 cm</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <!-- WALKING SCHEDULE TABLE (Unified Style) -->
+  <table class="uni-table">
+    <thead>
+      <tr>
+        <th>Week</th>
+        <th>Dates</th>
+        <th>Target Steps/Day</th>
+        <th>Schedule Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><b>Week 1</b><br><span class="small">Build the Base</span></td>
+        <td>11th Dec – 18th Dec 2025</td>
+        <td>8,000–9,000 steps/day</td>
+        <td>
+          • Morning: 20–25 min walk<br>
+          • Evening: 20 min walk<br>
+          • After meals: 5 min slow walk
+        </td>
+      </tr>
+      <tr>
+        <td><b>Week 2</b><br><span class="small">Push Slightly Higher</span></td>
+        <td>19th Dec – 26th Dec 2025</td>
+        <td>9,000–10,000 steps/day</td>
+        <td>
+          • Morning: 25–30 min brisk walk<br>
+          • Evening: 20–25 min normal walk<br>
+          • After meals: 5–7 min walk<br>
+          • Use stairs 2–3×/day
+        </td>
+      </tr>
+      <tr>
+        <td><b>Week 3</b><br><span class="small">Fat-burning Zone</span></td>
+        <td>27th Dec – 3rd Jan 2026</td>
+        <td>10,000–11,000 steps/day</td>
+        <td>
+          • Morning: 35 min brisk walk<br>
+          • Evening: 25 min walk<br>
+          • Add: 5 min fast-paced walk ×2
+        </td>
+      </tr>
+      <tr>
+        <td><b>Week 4</b><br><span class="small">Peak Fat Loss</span></td>
+        <td>4th Jan – 11th Jan 2026</td>
+        <td>11,000–12,000 steps/day</td>
+        <td>
+          • Morning: 40 min brisk walk<br>
+          • Evening: 25–30 min walk<br>
+          • After meals: 5–10 min walk<br>
+          • Sunday: 60–70 min long walk
+        </td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="4">Expected 30‑day result: <b>2.5–4 kg</b> without diet change; <b>4–5 kg</b> with sugar reduction.</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <!-- WATER INTAKE TABLE -->
+  <table class="uni-table">
+    <thead>
+      <tr><th colspan="2">💧 Ideal Water Intake — Smart Hydration for Fat-loss & Sleep</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><b>Daily Recommended Intake</b></td>
+        <td><span style="color:var(--accent); font-size:18px; font-weight:700;">3.0 — 3.5 liters / day</span><br><span class="small">Based on weight, age, walking level & fat-loss goals</span></td>
+      </tr>
+      <tr><td>Morning</td><td>500 ml</td></tr>
+      <tr><td>Before meals</td><td>250 ml</td></tr>
+      <tr><td>During walk</td><td>150–200 ml</td></tr>
+      <tr><td>After walk</td><td>300–400 ml</td></tr>
+      <tr><td>Evening</td><td>400–500 ml</td></tr>
+    </tbody>
+    <tfoot>
+      <tr><td colspan="2"><b>Tip:</b> Avoid heavy water intake after 9 PM to protect sleep quality.</td></tr>
+    </tfoot>
+  </table>
+
+  <!-- FIG BENEFITS TABLE -->
+  <table class="uni-table">
+    <thead>
+      <tr><th colspan="2">✅ Benefits of Eating 1 Fig (Anjeer) per Day</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Controls sugar cravings</td><td>Fiber reduces urge for biscuits, sweets, night munching.</td></tr>
+      <tr><td>Improves digestion</td><td>High fiber improves gut health & reduces bloating.</td></tr>
+      <tr><td>Keeps you full longer</td><td>Slower absorption → fewer hunger spikes.</td></tr>
+      <tr><td>Reduces belly bloating</td><td>Supports bowel health & reduces retention.</td></tr>
+    </tbody>
+    <tfoot>
+      <tr><td colspan="2">Best: soak 1 dry fig overnight & eat empty stomach.</td></tr>
+    </tfoot>
+  </table>
+
+  <!-- BELLY FAT REDUCTION TABLE -->
+  <table class="uni-table">
+    <thead>
+      <tr><th colspan="2">⭐ Top 5 Ways to Reduce Belly Fat (Age 50+)</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Increase walking</td><td>10k–12k steps/day; brisk morning + evening walk.</td></tr>
+      <tr><td>Reduce carbs</td><td>Cut 25–30% portions; replace with protein/salad.</td></tr>
+      <tr><td>Increase protein</td><td>Target 70–90g/day from eggs, dal, paneer, curd.</td></tr>
+      <tr><td>Strength routine</td><td>5-minute routine 3–4×/week (squats, pushups, planks).</td></tr>
+      <tr><td>Fix eating window</td><td>10–11 hr window (9 AM–8 PM); avoid food after 9 PM.</td></tr>
+    </tbody>
+  </table>
+
+  <!-- EXPECTATIONS TABLE -->
+  <table class="uni-table">
+    <thead><tr><th colspan="2">⭐ Expected Results in 30 Days</th></tr></thead>
+    <tbody>
+      <tr><td>Waist reduction</td><td>3–7 cm</td></tr>
+      <tr><td>Weight loss</td><td>3–5 kg (without major diet change)</td></tr>
+      <tr><td>Belly flattening</td><td>Visible in 10–14 days</td></tr>
+      <tr><td>To lose 10 kg</td><td>Usually takes 3–5 months</td></tr>
+    </tbody>
+  </table>
+
+</div>
+</body>
+</html>
